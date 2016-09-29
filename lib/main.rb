@@ -9,7 +9,10 @@ class Main
   end
 
   def list_index_scores country_code
+    values = {}
     @climate_data.select {|row| row[0] == country_code}
+                 .each {|row| values[row[1]] = row[2]}
+    values
   end
 
   def average_index_score country_code
