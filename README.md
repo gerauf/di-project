@@ -1,8 +1,8 @@
-### DI-project
+# DI-project
 
 A short project - 1 hour - to create a class that parses a CSV file and produces some basic analytics.
 
-The CSV will is in the following format.
+The CSV is in the following format:
 
 |Country code|Year|Index Score|
 |---|---|---|
@@ -11,7 +11,9 @@ The CSV will is in the following format.
 |...|...|...|
 |ZA|2013|0.289|
 
-The class can produce a list of years and scores for a given county and produce an average score for a given country
+The class can:
+- produce a list of years and scores for a given county
+- produce an average score for a given country
 
 ### To use
 
@@ -37,7 +39,7 @@ Use the public methods to list and average for particular country codes - e.g.
 $ scores.list('GB')
 $ scores.average('ES')
 ```
-#### To run tests
+### To run tests
 
 Install bundle (Ruby dependency manager) if not already on the system and run it.
 ```
